@@ -1,0 +1,16 @@
+{
+  "name": "AngularMap",
+  "version": "0.0.0",
+  "homepage": "https://github.com/macsj200/AngularMap",
+  "authors": [
+    "Max Johansen <macsj200@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
