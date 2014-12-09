@@ -3,23 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Responsive Image Maps AngularJS Directive</title>
-	<style>
-	body {
-		font-family: Helvetica, Arial, sans-serif;
-	}
-	h1 {
-		font-size: 20px;
-	}
-	div {
-		width: 100%;
-	}
-	img[usemap] {
-		border: none;
-		height: auto;
-		max-width: 100%;
-		width: auto;
-	}
-	</style>
+	<link rel="stylesheet" href="/css/main.css">
 </head>
 <body ng-app="map">
 <div ng-controller="MapCtrl">
@@ -33,28 +17,8 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
 
-<script src="../AngularMap.js"></script>
-
-<script type="text/javascript" charset="utf-8">
-	angular.module('map', ['AngularMap'])
-		.controller('MapCtrl', function($scope){
-			$scope.data = {
-				img: 'powerpuff-girls.fw.jpg',
-				areas: [{
-					shape:'circle',
-					coords:'525,250,200',
-					click:function(){alert('Blossom');},
-					title:'Blossom',
-					alt:'Blossom'
-				}]
-			};
-
-
-			$scope.myTrigger = function(arg){
-				alert(arg + ' clicked');
-			}
-		});
-</script>
+<script src="/lib/AngularMap.js"></script>
+<script src="./democontroller.js"></script>
 
 </body>
 </html>
