@@ -1,13 +1,17 @@
 angular.module('map', ['AngularMap'])
-	.controller('MapCtrl', function($scope){
-		$scope.data = {
-			img: 'powerpuff-girls.fw.jpg',
-			areas: [{
-				shape:'circle',
-				coords:'525,250,200',
-				click:function(){alert('Blossom');},
-				title:'Blossom',
-				alt:'Blossom'
-			}]
-		};
-	});
+.controller('MapCtrl', function($scope){
+	$scope.data = {
+		img: './demo/powerpuff-girls.fw.jpg'
+	};
+
+	$scope.data.beacons = [
+	{
+		coords:{
+			x:525,
+			y:250
+		},
+		click:function(){alert('Blossom');},
+		glyphicon:'glyphicon-asterisk'
+	}
+	];
+});
