@@ -1,5 +1,5 @@
 <img ng-src="{{data.img}}"/>
 
-<span data-ng-repeat="beacon in data.beacons" class="glyphicon" data-ng-class="beacon.glyphicon"
-	data-ng-click="beacon.click()"
-></span>
+<span data-ng-repeat="beacon in data.beacons" class="glyphicon beacon" data-ng-class="beacon.glyphicon"
+	data-ng-click="beacon.click()" data-ng-style="{'left':beacon.coords.x, 'top':beacon.coords.y,
+	'color':beacon.color}"></span>

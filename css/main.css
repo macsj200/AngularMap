@@ -1,4 +1,9 @@
-area { 
+area {
     display: none;
     outline: none;
+}
+
+.beacon{
+  z-index:100;
+  position:absolute;
 }

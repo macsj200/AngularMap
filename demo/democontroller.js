@@ -10,6 +10,7 @@ angular.module('map', ['AngularMap'])
 			x:525,
 			y:250
 		},
+		color:'#FFFFFF',
 		click:function(){alert('Blossom');},
 		glyphicon:'glyphicon-asterisk'
 	}
